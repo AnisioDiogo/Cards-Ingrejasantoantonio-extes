@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "E:/projetos/Java/teste de Revisão/Revisao_Segundo_ Semestre_av1"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../Dia 18"
+		},
+		{
+			"path": "../Estoque 3.0"
+		}
+	],
+	"settings": {
+		"java.project.sourcePaths": [
+			"Estoque/src"
+		],
+		"java.project.outputPath": "bin",
+		"java.project.referencedLibraries": [
+			"lib/**/*.jar"
+		],
+		"liveServer.settings.multiRootWorkspaceName": "extensao-main"
+	}
+}
