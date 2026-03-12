@@ -1,71 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styler.css" />
-    <title>Paróquia Nossa Senhora da Glória</title>
-  </head>
-  <body>
-    <header>
-      <div class="top">
-        <div class="container">
-            <!-- Informações de contato -->
-            <div class="divisoes_top">
-                <div class="horariofucionamento">
-                    <img src="https://i.ibb.co/VwQ5PHy/image-preview.png" alt="Horário">
-                    <p>Horários das Missas: Terça-feira a Sábados, às 18h
-                      Domingos as 9h
-                    </p>
-                </div>   
-                <div class="horariofucionamento">
-                  
-                    <img src="https://i.ibb.co/WDCcqYp/vecteezy-email-and-mail-icon-black-20009614.png" alt="Email">
-                    <a href="mailto:igrejadesantoantoniothe@gmail.com">
-                    <p>igrejadesantoantoniothe@gmail.com</p> 
-                  </a>
-                </div>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Paróquia Nossa Senhora da Glória - Comunidade de fé em Teresina, PI">
+  <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/styler.css">
+  <title>Paróquia Nossa Senhora da Glória</title>
+</head>
+<body>
 
-                <div class="horariofucionamento">
-                    <img src="https://www.imagensempng.com.br/wp-content/uploads/2021/08/02-51.png" alt="Endereço">
-                    <a href="https://www.google.com/maps/dir//R.+Ulisses+Marqu%C3%AAs,+4869+-+Ininga,+Teresina+-+PI,+64049-870/@-5.0476297,-42.8727212,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x78e3963f2391b25:0xf543d6fbb45379a!2m2!1d-42.790234!2d-5.0475857?entry=ttu&g_ep=EgoyMDI0MTExMC4wIKXMDSoASAFQAw%3D%3D">
-                      <p>Endereço: Rua Ulisses Marques, 4869 - Iningahttps://www.canva.com/design/DAGXvNiS0Ig/Ncz_U_jPeZ10BQ7PnPmWOQ/edit?utm_content=DAGXvNiS0Ig&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
-                      </a>
-                    </p> 
-                </div>
-            </div>
-        </div>
-        <!-- Barra superior -->
-        <header class="top-bar">
-            <div class="contact-info">
-                <span><img src="https://i.ibb.co/S0jY04f/vecteezy-phone-call-vector-icon-style-is-one-color-flat-round-8974795.jpg" alt="Phone Icon"> (86) 8112-00870 Felipe - PASCOM </span>
-                <span><img src="https://i.ibb.co/FKDbhhK/103607.png" alt="Email Icon"> pascomgloriateresina@gmail.com - PASCOM</span>
-            </div>
-            <div class="logo">
-                <img src="https://i.ibb.co/spTV8tk/LOGO-AZUL-NSG-SEM-FUNDO.png" alt="LOGO-AZUL-NSG-SEM-FUNDO">
-            </div>
-            <div class="live-buttons">
-              <a href=""></a>
-                <button>AO VIVO NOVENA</button>
-                <button>TV PARÓQUIA TRANSMISSÃO AO VIVO</button>
-            </div>
-        </header>
-    
-        <!-- Menu de navegação -->
-        <nav class="main-nav">
-            <ul>
-                <a href="index.html">
-                  <li>Home</li>
-                </a>
-                <li>A Paróquia</li>
-                <li>Novena Perpétua</li>
-                <li>Ações Pastorais</li>
-                <li>Atendimento</li>
-                <li>Multimídia</li>
-                <li>Contato</li>
-            </ul>
-        </nav>
+<!-- ===== TOPBAR ===== -->
+<div class="topbar">
+  <span>⛪ Paróquia Nossa Senhora da Glória</span>
+  <span>|</span>
+  <span>📍 Rua Ulisses Marques, 4869 - Ininga, Teresina - PI</span>
+  <span>|</span>
+  <span>📞 (86) 9914-0060</span>
+</div>
 
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="header-inner">
+   
+    <div class="contact-strip">
+      <div class="contact-item">
+        <img src="https://i.ibb.co/S0jY04f/vecteezy-phone-call-vector-icon-style-is-one-color-flat-round-8974795.jpg" alt="Telefone">
+        <span>(86) 8112-00870 — PASCOM</span>
+      </div>
+      
+      <div class="contact-item">
+        <img src="https://i.ibb.co/FKDbhhK/103607.png" alt="Email">
+        <a href="mailto:pascomgloriateresina@gmail.com">pascomgloriateresina@gmail.com</a>
+      </div>
+     
+    </div>
+     <a href="index.html">
+      <img src="https://i.ibb.co/spTV8tk/LOGO-AZUL-NSG-SEM-FUNDO.png" alt="Logo Paróquia Nossa Senhora da Glória" class="logo-img">
+    </a>
+
+
+    <div class="live-buttons">
+      <a href="#" class="btn-live">AO VIVO NOVENA</a>
+      <a href="#" class="btn-live">TV PARÓQUIA</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Abrir menu">☰</button>
+    <ul class="nav-list" id="navList">
+      <li><a href="index.html" class="nav-link active">Home</a></li>
+      <li><a href="sobreNos.html" class="nav-link">A Paróquia</a></li>
+      <li><a href="Serviços1.html" class="nav-link">Ações Pastorais</a></li>
+      <li><a href="Serviços2.html" class="nav-link">Igrejas</a></li>
+      <li><a href="Serviços3.html" class="nav-link">Novena Perpétua</a></li>
+      <li><a href="#contato" class="nav-link">Contato</a></li>
+    </ul>
+  </div>
+</nav>
         <!-- Seção de destaque principal com imagem de fundo -->
         <section class="highlight">
           <div class="highlight-text">
