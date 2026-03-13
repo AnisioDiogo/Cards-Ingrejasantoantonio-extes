@@ -2,6 +2,7 @@
 :root{
      --azul-escuro:  #1a2a4a;
   --azul-medio:   #1e3a6e;
+  --azul-claro:   #2e5a9a;
   --dourado:      #c9a84c;
   --dourado-claro:#f0d080;
   --branco:       #ffffff;
@@ -18,14 +19,16 @@
 
 
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*,
+*::before,
+*::after{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body {
-  font-family: 'Segoe UI', 'Georgia', serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
   background-color: var(--cinza-claro);
   color: var(--texto-escuro);
   line-height: 1.6;
@@ -53,20 +56,17 @@ body {
   box-shadow: var(--sombra);
 }
 .header-inner {
-    max-width: 1200px;
-    margin-left: 380px;
-    padding: 10px 20px;
-  display: flex;
-align-items: center;  
-  gap: 20px;
-  flex-wrap: wrap;
+     max-width:1200px;
+  margin:0 auto;
+  padding:5px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
 .logo-img {
-  height: 90px;
+    height: 100px;
   width: auto;
   object-fit: contain;
-  flex-shrink: 0;
-  margin: 0 20px 0 20px;
 }
 
 /* Barra de contato */
@@ -74,6 +74,7 @@ align-items: center;
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
+  flex:1;
 
 }
 .contact-item {
@@ -89,17 +90,19 @@ align-items: center;
 
 /* Botões ao vivo */
 .live-buttons {
-  display: flex;
+  flex:1;
+  display:flex;
+  justify-content:flex-end;
   gap: 8px;
   flex-wrap: wrap;
-   margin-left: 200px;
+  margin-left: auto;
 }
 .btn-live {
   background-color: var(--marron-escuro);
   color: white;
   border: none;
   padding: 7px 12px;
-   
+ text-decoration: none;
   border-radius: 5px;
   font-size: 11px;
   font-weight: 700;
@@ -121,25 +124,8 @@ align-items: center;
 
 
 
-/* body::before {
-    content: "";
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://i.ibb.co/Jz686xq/Imagem-do-Whats-App-de-2024-10-30-s-18-13-20-8c2898b7.jpg" '); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    opacity: 0.7; /* Ajuste o valor de opacidade aqui 
-    z-index: 
-}
- */
-
 .navbar {
-  background-color: var(--azul-escuro);
+  background-color: var(--marron-escuro);
   border-bottom: 3px solid var(--texto-medio);
 }
 .nav-inner {
@@ -154,16 +140,18 @@ align-items: center;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  list-style: none;
 }
 .nav-link {
   display: block;
-  color: #c8d8ee;
+  color: var(--branco);
   padding: 14px 16px;
   font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.3px;
   transition: color var(--transicao), 
   background var(--transicao);
+  text-decoration: none;
   position: relative;
 }
 .nav-link::after {
